@@ -47,25 +47,24 @@ body {
   gap: 150px;
 }
 
-.right h1 {
+.first-content .right h1 {
   font-size: 2rem;
   color: #fff;
   text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.33);
 }
 
-.right h1:first-child {
+.first-content .right h1:first-child {
   font-size: 4rem;
   color: #ffeb38;
 }
 
-.right p {
+.first-content .right p {
   color: #fff;
   font-size: 1.2rem;
 }
 
 .first-content button {
   background: #ffeb38;
-
   padding: 15px;
   border: none;
   border-radius: 25px;
@@ -160,7 +159,6 @@ body {
 }
 
 .container i {
-  color: #fff;
   background: #ffeb38;
   padding: 10px;
   border-radius: 50%;
@@ -170,11 +168,13 @@ body {
 
 .third-content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   width: 100%;
   background: #fff;
+  gap: 20px;
 }
 
 .third-content .start {
@@ -193,4 +193,74 @@ body {
 .third-content h1 {
   color: #f4592f;
   font-size: 3rem;
+}
+
+.card {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.card h1 {
+  color: black;
+}
+
+.card img {
+  height: 500px;
+  border-radius: 15px;
+}
+
+/* forth-content */
+
+.fourth-content {
+  height: 100vh;
+  width: 100%;
+  background: green;
+}
+
+/* Fifth-content */
+
+.fifth-content {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.fifth-content .left {
+  width: 50%;
+  height: 100%;
+}
+
+.fifth-content .left img {
+  height: 100%;
+  width: 100%;
+}
+
+.fifth-content .right {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 10rem;
+}
+
+.fifth-content .right .title h1 {
+  text-shadow: 2px 2px 10px black;
+  font-size: 3.6rem;
+  color: #ffeb38;
+}
+
+.contact h1 {
+  letter-spacing: 5px;
 }
