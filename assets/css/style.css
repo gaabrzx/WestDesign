@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-principal: #ffeb38;
+  --background-color: #060724;
+  --background-color2: #3f3d56;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -17,32 +23,30 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: #060724;
+  background: linear-gradient(
+    90deg,
+    var(--background-color),
+    var(--background-color2)
+  );
 }
 
 .introduction_div {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   gap: 50px;
+  text-align: center;
 }
 
-.introduction_div,
 .button_div {
-  margin-left: 4rem;
+  text-align: center;
 }
-
 .left h1 {
   font-size: 4.5rem;
   width: 450px;
   margin-top: 3rem;
   letter-spacing: 3px;
-}
-
-.left p {
-  font-weight: bold;
-  font-size: 1.5rem;
 }
 
 h1,
@@ -64,7 +68,7 @@ p {
   height: 50px;
   border: none;
   cursor: pointer;
-  background: #ffde59;
+  background: var(--color-principal);
   transition: all 1s ease-in-out;
   font-size: 1rem;
 }
@@ -79,6 +83,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--background-color2);
 }
 
 .right img {
@@ -97,14 +102,6 @@ p {
     align-items: center;
   }
 
-  .left h1 {
-    font-size: 2rem;
-  }
-
-  .left p {
-    font-size: 1rem;
-  }
-
   .introduction_div {
     text-align: center;
     align-items: center;
@@ -117,9 +114,5 @@ p {
   .introduction_div,
   .button_div {
     margin-left: 0;
-  }
-
-  .logo_div img {
-    height: 150px;
   }
 }
