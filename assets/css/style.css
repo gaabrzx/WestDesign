@@ -97,6 +97,14 @@ p {
     align-items: center;
   }
 
+  .left h1 {
+    font-size: 2rem;
+  }
+
+  .left p {
+    font-size: 1rem;
+  }
+
   .introduction_div {
     text-align: center;
     align-items: center;
@@ -109,5 +117,9 @@ p {
   .introduction_div,
   .button_div {
     margin-left: 0;
+  }
+
+  .logo_div img {
+    height: 150px;
   }
 }
